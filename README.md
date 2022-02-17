@@ -49,7 +49,8 @@ The task will be to accurately predict the customer churn for this data. First a
 In order to access the data firstly the data has to be downloaded from Kaggle and uploaded to github. The the raw format link ("https://raw.githubusercontent.com/soorya-venkatesh/nd00333-capstone/master/starter_file/Telco_customer_churn.csv") can be used directly with the TabularDatasetFactory class in AzureML SDK.
 
 ## Automated ML
-The AutoML model was trained 3 fold cross validation, was trained as a classification task for a maximum of 15 mins. Early stpping was enabled. A maximum of 6 concurent runs could happen at a time. The cluster used was a STANDARD_D13_V2 with 8 cores. The full list of settings is given below
+The AutoML model was trained 3 fold cross validation, was trained as a classification task for a maximum of 15 mins. Early stpping was enabled. A maximum of 6 concurent runs could happen at a time. The cluster used was a STANDARD_D13_V2 with 8 cores. The full list of settings is given below.
+The best model got from the AutoML was a voting ensemble with AUC score of 0.862
 ```
 automl_settings = {
        "n_cross_validations": 3,
@@ -168,6 +169,13 @@ For the request we get a response of [0,0,0] which means for the 3 customers inp
 
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 
+
+## Future Work:
+- Create a front end UI and test the deployed model using the UI
+- Perform load testing to check deployment using toolds like Apache benchmark
+- Train the AutoML model for a longer time and try to boost the results.
+
+
 ## Screen Recording
 
 **Part 1:**
@@ -179,10 +187,3 @@ https://user-images.githubusercontent.com/63422900/154582558-621f0e53-c0f8-4cfa-
 
 
 https://user-images.githubusercontent.com/63422900/154584601-d224cb99-e333-4e85-8b7d-08fa05953ffd.mp4
-
-
-
-
-
-## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
