@@ -3,6 +3,8 @@
 
 The goal of this project is to predict the churn of customers belonging to a Telecom company. AzureML's machine functionalities such as Hyperdrive and AutoML are extensively going to be used to train a model and the best model will be deployed as a webservice in Azure and the endpoint will be tested out. 
 
+**PS:** Skip to the bottom to see a live video demo of the project.
+
 ## Project Set Up and Installation
 Make sure you have a Azure Machine learning account in order to reproduce the results.
 - **Step 1**: Have a look at the Telecom_churn_EDA.ipynb for a EDA on the data
