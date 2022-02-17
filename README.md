@@ -171,7 +171,16 @@ For the request we get a response of [0,0,0] which means for the 3 customers inp
 ## Screen Recording
 
 **Part 1:**
+
+
 https://user-images.githubusercontent.com/63422900/154582558-621f0e53-c0f8-4cfa-ae86-bef5e370812e.mp4
+
+**Part 2:**
+
+
+https://user-images.githubusercontent.com/63422900/154584601-d224cb99-e333-4e85-8b7d-08fa05953ffd.mp4
+
+
 
 
 
